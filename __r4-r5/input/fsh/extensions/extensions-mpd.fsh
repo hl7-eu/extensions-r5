@@ -13,6 +13,7 @@ Context: Medication
     device 1..1 and
     quantity 0..1
 * extension[device].value[x] only CodeableConcept or Reference(Device or DeviceDefinition)
+//* extension[device].valueCodeableConcept from $eHDSIPackage (example)
 * extension[device] ^short = "Coded or referenced device"
 * extension[quantity].value[x] only Quantity
 * extension[quantity] ^short = "Number of defined devices in the package"
@@ -27,15 +28,6 @@ Context: Medication.ingredient.strength
 * valueCodeableConcept 1..1
 * valueCodeableConcept from $substanceSCT (example)
 
-
-Extension: MedicationStrengthType
-Id: ihe-ext-medication-strengthtype
-Title: "Medication - Strength type"
-Description: "Strength type (e.g. concentration strength, presentation strength)"
-Context: Medication.ingredient.strength
-* ^url = "http://profiles.ihe.net/PHARM/ihe.pharm.mpd/StructureDefinition/ihe-ext-medication-strengthtype"
-* value[x] only CodeableConcept
-* valueCodeableConcept 1..1
 
 Extension: MedicationClassification
 Id:        ihe-ext-medication-classification
@@ -86,6 +78,7 @@ Context: Medication
 * extension[type].valueCodeableConcept from $medication-characteristic (example)
 * extension[type] ^short = "Code specifying the type of characteristic of medication"
 * extension[value] ^short = "Descriptive value of the characteristic"
+* extension[value].value[x] only boolean or CodeableConcept or string or Quantity or dateTime or integer or decimal or Ratio
 
 
 Extension: MedicationUnitOfPresentation
@@ -97,17 +90,29 @@ Description: "Unit of presentation, typically describing the smallest countable 
 * ^url = "http://profiles.ihe.net/PHARM/ihe.pharm.mpd/StructureDefinition/ihe-ext-medication-unitofpresentation"
 * value[x] only CodeableConcept 
 * valueCodeableConcept 1..1
-//* valueCodeableConcept from $unitOfPresentation (example)
+* valueCodeableConcept from $unitOfPresentation (example)
+
+Extension: MedicationRequestPrescribedQuantity
+Id:        ihe-ext-medicationrequest-prescribedQuantity
+Title:     "MedicationRequest - Prescribed Quantity"
+Description: "Total amount of product being requested. This may refer to number of packages when package size is indicated in Medication resource."
+Context: MedicationRequest.dispenseRequest
+
+* ^url = "http://profiles.ihe.net/PHARM/ihe.pharm.mpd/StructureDefinition/ihe-ext-medicationrequest-prescribedQuantity"
+* value[x] only Quantity	
+* valueQuantity ^short = "Overall quantity of the prescribed product. It may be number of packages or the quantity in other explicitly stated units."
 
 [r4-end]
 
+Extension: PackageType
+Id: package-type
+Title: "Package type"
+Description: "This extension applies to Medication and expresses the type of the container for the product (e.g. bottle, unit-dose blister, pre-filled pen)."
+Context: Medication
+
+* ^url = "http://hl7.eu/fhir/StructureDefinition/package-type"
+* value[x] only CodeableConcept
+* valueCodeableConcept from $eHDSIPackage (example)	
+* valueCodeableConcept ^short = "Type of container, e.g pre-filled syringe, unit-dose blister, sachet, etc."
 
 
-Extension: PrescribedQuantity
-Id: prescribed-quantity
-Title: "Overall prescribed quantity"
-Description: "This extension applies to the MedicationRequest resource for marking the overall prescribed quantity (e.g. number of packages)."
-Context: MedicationRequest.dispenseRequest
-
-* ^url = "http://hl7.eu/fhir/StructureDefinition/prescribed-quantity"
-* value[x] only Quantity	

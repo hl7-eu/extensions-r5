@@ -38,6 +38,7 @@ copyright: >-
 dependencies:
   
  hl7.fhir.uv.ips: current
+# hl7.terminology.r5: current
 [r4-end]
 #   hl7.fhir.us.mcode:
 #     id: mcode
@@ -78,7 +79,7 @@ parameters: #see https://confluence.hl7.org/display/FHIR/Implementation+Guide+Pa
   special-url:
     - http://hl7.eu/fhir/StructureDefinition/information-recipient
     - http://hl7.eu/fhir/StructureDefinition/composition-basedOn-order-or-requisition
-    - http://hl7.eu/fhir/StructureDefinition/prescribed-quantity
+    - http://hl7.eu/fhir/StructureDefinition/package-type
 
 [r4-init]
     - http://profiles.ihe.net/PHARM/ihe.pharm.mpd/StructureDefinition/ihe-ext-medication-device
@@ -89,6 +90,7 @@ parameters: #see https://confluence.hl7.org/display/FHIR/Implementation+Guide+Pa
     - http://profiles.ihe.net/PHARM/ihe.pharm.mpd/StructureDefinition/ihe-ext-medication-sizeofitem
     - http://profiles.ihe.net/PHARM/ihe.pharm.mpd/StructureDefinition/ihe-ext-medication-characteristic
     - http://profiles.ihe.net/PHARM/ihe.pharm.mpd/StructureDefinition/ihe-ext-medication-unitofpresentation
+    - http://profiles.ihe.net/PHARM/ihe.pharm.mpd/StructureDefinition/ihe-ext-medicationrequest-prescribedQuantity
 [r4-end]
 
 

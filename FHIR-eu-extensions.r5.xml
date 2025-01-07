@@ -8,7 +8,7 @@
 <artifact id="Composition/comp-example" key="Composition-comp-example" name="Composition: example with InformationRecipient and CompositionBasedOnOrderOrRequisition extensions"/>
 <artifact id="StructureDefinition/composition-basedOn-order-or-requisition" key="StructureDefinition-composition-basedOn-order-or-requisition" name="Document Based On Order"/>
 <artifact id="StructureDefinition/information-recipient" key="StructureDefinition-information-recipient" name="Information recipient"/>
-<artifact id="StructureDefinition/prescribed-quantity" key="StructureDefinition-prescribed-quantity" name="Overall prescribed quantity"/>
+<artifact id="StructureDefinition/package-type" key="StructureDefinition-package-type" name="Package type"/>
 <page key="NA" name="(NA)"/>
 <page key="many" name="(many)"/>
 <page key="artifacts" name="Artifacts Summary"/>
