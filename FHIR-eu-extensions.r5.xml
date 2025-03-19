@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ciUrl="https://build.fhir.org/ig/hl7-eu/extensions" defaultVersion="0.1.0" defaultWorkgroup="eu" gitUrl="https://github.com/HL7-eu/extensions" url="http://hl7.eu/fhir/extensions">
+<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ciUrl="https://build.fhir.org/ig/hl7-eu/extensions" defaultVersion="0.1.0" defaultWorkgroup="eu" url="http://hl7.eu/fhir/extensions">
 <version code="current" url="https://build.fhir.org/ig/hl7-eu/extensions"/>
 <version code="0.1.0" url="http://hl7.eu/fhir/extensions/0.1.0"/>
 <artifactPageExtension value="-definitions"/>
@@ -11,6 +11,7 @@
 <artifact id="StructureDefinition/information-recipient" key="StructureDefinition-information-recipient" name="Document Information recipient"/>
 <artifact id="StructureDefinition/presentedForm" key="StructureDefinition-presentedForm" name="Document Presented Form"/>
 <artifact id="StructureDefinition/encounter-legalStatus" key="StructureDefinition-encounter-legalStatus" name="Encounter - Legal Status"/>
+<artifact id="StructureDefinition/ihe-ext-medicationrequest-offlabeluse" key="StructureDefinition-ihe-ext-medicationrequest-offlabeluse" name="MedicationRequest - Off-label use"/>
 <artifact id="StructureDefinition/package-type" key="StructureDefinition-package-type" name="Package type"/>
 <page key="NA" name="(NA)"/>
 <page key="many" name="(many)"/>
