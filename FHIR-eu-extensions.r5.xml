@@ -7,15 +7,24 @@
 <artifactPageExtension value="-mappings"/>
 <artifact id="Composition/comp-example" key="Composition-comp-example" name="Composition: example with InformationRecipient and CompositionBasedOnOrderOrRequisition extensions"/>
 <artifact id="StructureDefinition/consent-relatedCondition" key="StructureDefinition-consent-relatedCondition" name="Consent Related Condition"/>
+<artifact id="Consent/consent-example" key="Consent-consent-example" name="Consent: example with related condition"/>
 <artifact id="StructureDefinition/composition-basedOn-order-or-requisition" key="StructureDefinition-composition-basedOn-order-or-requisition" name="Document Based On Order"/>
 <artifact id="StructureDefinition/information-recipient" key="StructureDefinition-information-recipient" name="Document Information recipient"/>
 <artifact id="StructureDefinition/presentedForm" key="StructureDefinition-presentedForm" name="Document Presented Form"/>
 <artifact id="StructureDefinition/encounter-legalStatus" key="StructureDefinition-encounter-legalStatus" name="Encounter - Legal Status"/>
-<artifact id="StructureDefinition/package-type" key="StructureDefinition-package-type" name="Package type"/>
+<artifact id="Encounter/enc-example" key="Encounter-enc-example" name="Encounter: example with legal status"/>
+<artifact id="Medication/04A-FirmagonBranded" key="Medication-04A-FirmagonBranded" name="FIRMAGON"/>
+<artifact id="StructureDefinition/medication-package-type" key="StructureDefinition-medication-package-type" name="Medication - Package type"/>
 <page key="NA" name="(NA)"/>
 <page key="many" name="(many)"/>
 <page key="artifacts" name="Artifacts Summary"/>
+<page key="authors" name="Authors and Contributors"/>
+<page key="copyright" name="Copyright"/>
+<page key="crossversionanalysis" name="Cross-version Analysis"/>
+<page key="dependencies" name="Dependencies"/>
 <page key="downloads" name="Downloads"/>
 <page key="index" name="Home"/>
+<page key="introduction" name="Introduction"/>
+<page key="knownissues" name="Known Issues"/>
 <page key="toc" name="Table of Contents"/>
 </specification>
