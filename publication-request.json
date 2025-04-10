@@ -1,14 +1,14 @@
 {
   "package-id" : "hl7.fhir.eu.r5.extensions",
-  "version" : "0.1.1",
-  "path" : "http://hl7.eu/fhir/r5/extensions/0.1.1",
+  "version" : "0.1.1-ballot",
+  "path" : "http://hl7.eu/fhir/r5/extensions/0.1.1-ballot",
   "ci-build": "https://build.fhir.org/ig/hl7-eu/extensions-r5",
   "first": true,
   "desc" : "This is the first STU version released",  
   "title" : "HL7 Europe Extensions",
   "category" : "Extensions",
   "introduction" : "This guide lists the extensions specified for the European REALM.",
-  "status" : "trial-use",
+  "status" : "ballot",
   "sequence" : "Release",
   "mode": "milestone"
 }
