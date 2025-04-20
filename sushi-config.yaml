@@ -1,4 +1,4 @@
-id: hl7.fhir.eu.r5.extensions
+id: hl7.fhir.eu.extensions
 canonical: http://hl7.eu/fhir/r5/extensions
 fhirVersion: 5.0.0 # https://www.hl7.org/fhir/valueset-FHIR-version.html
 name:  Hl7EuExtensions
@@ -68,6 +68,10 @@ pages:
 # https://confluence.hl7.org/display/FHIR/Implementation+Guide+Parameters
 #
 parameters: #see https://confluence.hl7.org/display/FHIR/Implementation+Guide+Parameters
+
+  generate-version:
+    - r4
+    - r5
 #  produce-jekyll-data: true
   special-url:
     - http://hl7.eu/fhir/StructureDefinition/information-recipient
@@ -86,6 +90,9 @@ parameters: #see https://confluence.hl7.org/display/FHIR/Implementation+Guide+Pa
 #    - input/pagecontent
 #    - input/intro-notes
 #  active-tables: false
+
+
+
   apply-contact: true
   apply-jurisdiction: true
   apply-publisher: true
