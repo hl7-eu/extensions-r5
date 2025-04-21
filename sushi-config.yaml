@@ -151,7 +151,7 @@ menu:
     Copyright: copyright.html
     Cross-version Analysis: crossversionanalysis.html
   Artifacts: artifacts.html
-  R4 IG: https://build.fhir.org/ig/hl7-eu/extensions
+  # R4 IG: https://build.fhir.org/ig/hl7-eu/extensions
 # ╭───────────────────────────Less Common Implementation Guide Properties──────────────────────────╮
 # │  Uncomment the properties below to configure additional properties on the ImplementationGuide  │
 # │  resource. These properties are less commonly needed than those above.                         │
